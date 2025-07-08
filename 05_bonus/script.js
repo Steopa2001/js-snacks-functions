@@ -16,12 +16,22 @@ const salutoTempo = (nome) => {
   //variabile saluto
   let saluto;
 
-  if()
+  if (ora < 13) {
+    saluto = 'Buongiorno';
+  } else if (ora < 17) {
+    saluto = 'Buon pomeriggio';
+  } else {
+    saluto = 'Buonasera';
+  }
 
+  //ritorno la frase completa
+  return `${saluto} ${nome}.`;
 };
 
 // Invoca la funzione qui e stampa il risultato in console
+const result = salutoTempo(name);
 
+console.log(result);
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
