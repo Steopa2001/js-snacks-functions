@@ -4,7 +4,10 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-
+const contaVocali = (str) => {
+  //definisco le vocali da cercare 
+  const vocali = ['a', 'e', 'i', 'o', 'u'];
+};
 
 // Invoca la funzione qui e stampa il risultato in console
 
