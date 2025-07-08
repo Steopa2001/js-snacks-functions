@@ -8,6 +8,20 @@ const contaVocali = (str) => {
   //definisco le vocali da cercare 
   const vocali = ['a', 'e', 'i', 'o', 'u'];
 };
+//inizializzo un contatore a 0
+let cout = 0;
+
+//creo un ciclo su ogni lettera della stringa 
+for (let i = 0; i < str.length; i++) {
+  //metto in minuscolo la lettera 
+  const letter = str[i].toLowerCase();
+
+  //controllo se la lettera è una vocale 
+  if (vocali.includes(letter)) {
+    count++;
+  }
+}
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
