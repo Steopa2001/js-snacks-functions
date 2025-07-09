@@ -5,14 +5,19 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 const initialLetter = (arrayWords, letter) => {
-  const filter = arrayWords.filter(word => word[0] === letter);
+  const filter = [];
+
+  for (let i = 0; i < arrayWords.length; i++){
+    if (names[i][0].toLowerCase() === letter.toLowerCase()) {
+      filter.push(arrayWords[i]);
+    }
+  }
+
   return filter;
 };
 
 // Invoca la funzione qui e stampa il risultato in console
-const result = initialLetter(names, 'A');
-
-console.log(result);
+console.log(initialLetter(names, 'a'));
 
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

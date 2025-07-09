@@ -10,6 +10,7 @@ const newArrayInitial = (arrayNomi) => {
   for (let i = 0; i < arrayNomi.length; i++) {
     initial.push(arrayNomi[i][0]);
   }
+  
   return initial;
 };
 
